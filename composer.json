@@ -1,16 +1,26 @@
 {
-    "name": "user/design-pattern-bear",
+    "name": "ken0911208818/php-design-patter-example",
     "authors": [
         {
             "name": "ken",
-            "email": "u1045235@hk.edu.tw"
+            "email": "ken0911208818@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "phpunit/phpunit": "^9.5",
+        "php": "^7.4"
+    },
     "autoload": {
-        "Ken\\Src\\": "src/"
+        "psr-4": {
+            "Src\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\": "tests"
+        }
     },
     "require-dev": {
-        "phpunit/phpunit": "^9.5"
+        "codedungeon/phpunit-result-printer": "^0.30.0"
     }
 }
