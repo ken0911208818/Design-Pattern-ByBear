@@ -27,4 +27,9 @@ class ProgramTest extends TestCase
     {
         $this->assertEquals('自強號', $this->program->getModel('LimitedExpress'));
     }
+
+    public function test_Semi_Express()
+    {
+        $this->assertEquals('復興號', $this->program->getModel('SemiExpress'));
+    }
 }
